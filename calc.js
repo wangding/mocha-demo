@@ -6,7 +6,10 @@
  */
 
 function add(x, y) {
-  return 0;
+  if(((typeof x) === 'number') && ((typeof y) === 'number'))
+    return x + y;
+  else
+    return NaN;
 }
 
 /**
@@ -17,7 +20,10 @@ function add(x, y) {
  */
 
 function subtract(x, y) {
-  return 0;
+  if(((typeof x) === 'number') && ((typeof y) === 'number'))
+    return x - y;
+  else
+    return NaN;
 }
 
 /**
@@ -28,7 +34,10 @@ function subtract(x, y) {
  */
 
 function multiply(x, y) {
-  return 0;
+  if(((typeof x) === 'number') && ((typeof y) === 'number'))
+    return x * y;
+  else
+    return NaN;
 }
 
 /**
@@ -39,7 +48,10 @@ function multiply(x, y) {
  */
 
 function divide(x, y) {
-  return 0;
+  if(((typeof x) === 'number') && ((typeof y) === 'number'))
+    return x / y;
+  else
+    return NaN;
 }
 
 module.exports.add = add;
