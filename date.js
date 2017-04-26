@@ -3,7 +3,9 @@
  * @return {string} 返回当前的日期，格式为：YYYY-MM-DD
  */
 function today() {
-  return '2017-04-25';
+  var d = new Date(Date.now());
+
+  return d.toISOString().slice(0, 10);
 }
 
 /**
@@ -11,7 +13,9 @@ function today() {
  * @return {string} 返回昨天的日期，格式为：YYYY-MM-DD
  */
 function yesterday() {
-  return '2017-04-25';
+  var d = new Date(Date.now() - 24*60*60*1000);
+
+  return d.toISOString().slice(0, 10);
 }
 
 /**
@@ -19,7 +23,9 @@ function yesterday() {
  * @return {string} 返回前天的日期，格式为：YYYY-MM-DD
  */
 function the_day_before_yesterday() {
-  return '2017-04-25';
+  var d = new Date(Date.now() - 2*24*60*60*1000);
+
+  return d.toISOString().slice(0, 10);
 }
 
 /**
@@ -27,6 +33,8 @@ function the_day_before_yesterday() {
  * @return {bool} 返回布尔类型
  */
 function isToday(date) {
+  if(date.slice(0, 10) === today()) return true;
+
   return false;
 }
 
@@ -35,6 +43,8 @@ function isToday(date) {
  * @return {bool} 返回布尔类型
  */
 function isYesterday(date) {
+  if(date.slice(0, 10) === yesterday()) return true;
+
   return false;
 }
 
@@ -43,6 +53,8 @@ function isYesterday(date) {
  * @return {bool} 返回布尔类型
  */
 function isThe_day_before_yesterday(date) {
+  if(date.slice(0, 10) === the_day_before_yesterday()) return true;
+
   return false;
 }
 
