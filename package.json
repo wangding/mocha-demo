@@ -4,7 +4,7 @@
   "description": "基于 mocha 的自动化测试框架示例代码",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
     "mocha"
@@ -13,6 +13,7 @@
   "license": "MIT",
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.3.0"
+    "mocha": "^3.3.0",
+    "mochawesome": "^2.1.0"
   }
 }
