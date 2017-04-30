@@ -2,5 +2,8 @@
   "libs": [],
   "plugins": {
     "node": {}
+    "modules": {
+      "modules": "./node_modules/node-fetch/index.js"
+    }
   }
 }
