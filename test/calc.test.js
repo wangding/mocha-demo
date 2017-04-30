@@ -6,6 +6,22 @@ var divide = require('../calc').divide;
 var expect = require('chai').expect;
 
 describe.only('加法函数的测试', function() {
+  before(function() {
+    console.log('before');
+  });
+
+  after(function() {
+    console.log('after');
+  });
+
+  beforeEach(function() {
+    console.log('beforeEach');
+  });
+
+  afterEach(function() {
+    console.log('afterEach');
+  });
+
   it.skip('0 + 0 = 0', function() {
     expect(add(0, 0)).to.be.equal(0);
   });
