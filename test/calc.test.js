@@ -5,8 +5,8 @@ var divide = require('../calc').divide;
 
 var expect = require('chai').expect;
 
-describe('加法函数的测试', function() {
-  it('0 + 0 = 0', function() {
+describe.only('加法函数的测试', function() {
+  it.skip('0 + 0 = 0', function() {
     expect(add(0, 0)).to.be.equal(0);
   });
 
@@ -28,7 +28,7 @@ describe('加法函数的测试', function() {
 });
 
 describe('减法函数的测试', function() {
-  it('0 - 0 = 0', function() {
+  it.skip('0 - 0 = 0', function() {
     expect(subtract(0, 0)).to.be.equal(0);
   });
 
@@ -49,8 +49,8 @@ describe('减法函数的测试', function() {
   });
 });
 
-describe('乘法函数的测试', function() {
-  it('0 × 0 = 0', function() {
+describe.only('乘法函数的测试', function() {
+  it.skip('0 × 0 = 0', function() {
     expect(multiply(0, 0)).to.be.equal(0);
   });
 
@@ -71,8 +71,8 @@ describe('乘法函数的测试', function() {
   });
 });
 
-describe('除法函数的测试', function() {
-  it('0 / 0 = NaN', function() {
+describe.only('除法函数的测试', function() {
+  it.skip('0 / 0 = NaN', function() {
     expect(isNaN(divide(0, 0))).to.be.ok;
   });
 
