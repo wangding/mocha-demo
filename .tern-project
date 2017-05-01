@@ -1,7 +1,7 @@
 {
   "libs": [],
   "plugins": {
-    "node": {}
+    "node": {},
     "modules": {
       "modules": "./node_modules/node-fetch/index.js"
     }

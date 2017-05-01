@@ -1,11 +1,13 @@
-var today = require('../date').today;   
-var yesterday = require('../date').yesterday;
-var the_day_before_yesterday = require('../date').the_day_before_yesterday;
-var isToday = require('../date').isToday;
-var isYesterday = require('../date').isYesterday;
-var isThe_day_before_yesterday = require('../date').isThe_day_before_yesterday;
+import date from '../date.js';
+import chai from 'chai';
 
-var expect = require('chai').expect;
+let today = date.today;
+let yesterday = date.yesterday;
+let the_day_before_yesterday = date.the_day_before_yesterday;
+let isToday = date.isToday;
+let isYesterday = date.isYesterday;
+let isThe_day_before_yesterday = date.isThe_day_before_yesterday;
+let expect = chai.expect;
 
 describe('today 函数的测试', function() {
   it('today is 2017-04-26', function() {

@@ -1,9 +1,11 @@
-var add = require('../calc').add;
-var subtract = require('../calc').subtract;
-var multiply = require('../calc').multiply;
-var divide = require('../calc').divide;
+import calc from '../calc.js';
+import chai from 'chai';
 
-var expect = require('chai').expect;
+let add = calc.add;
+let subtract = calc.subtract;
+let multiply = calc.multiply;
+let divide = calc.divide;
+let expect = chai.expect;
 
 describe.only('加法函数的测试', function() {
   before(function() {
