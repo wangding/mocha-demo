@@ -15,9 +15,10 @@
     "babel-core": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
     "mocha": "^3.3.0",
     "mochawesome": "^2.1.0",
     "node-fetch": "^1.6.3",
-    "superagent": "^3.5.2"
+    "selenium-webdriver": "^3.4.0"
   }
 }

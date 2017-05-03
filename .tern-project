@@ -2,8 +2,8 @@
   "libs": [],
   "plugins": {
     "node": {},
-    "modules": {
-      "modules": "./node_modules/node-fetch/index.js"
+    "modules":{
+      "modules": "./node_modules/selenium-webdriver/index.js"
     }
   }
 }
